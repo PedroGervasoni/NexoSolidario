@@ -1,0 +1,307 @@
+@import "var";
+@import "contacto";
+@import "como-ayudar";
+@import "inicio";
+
+
+* {
+  font-family: 'M PLUS 1p', sans-serif;
+  text-decoration: none !important;
+  margin: 0;
+  padding: 0;
+}
+body,
+html{
+  
+  scroll-behavior: smooth;
+  background-attachment: fixed, scroll;
+
+}
+.secciones {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#inicio {
+  height: 100vh;
+}
+
+#como-ayudar {
+  height: 100vh;
+}
+
+#contacto {
+  height: 100vh;
+}
+
+/* scroll bar */
+/* scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: $blanco;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $naranja-claro;
+  border-radius: $border-radius;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: $naranja-medio;
+  animation-duration: 1s;
+}
+
+/* navbar */
+
+
+.header {
+  background-color: $blanco;
+
+  height: 100px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-link {
+  color: $negro;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+  align-items: center;
+}
+
+.uit {
+  color: $naranja-claro;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+
+  &:nth-child(4) {
+    width: 65px;
+    /* padding-top: 60px; */
+  }
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+
+
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  color: $naranja-claro;
+  transition: 0.4s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+/* MOBILE */
+@media (min-width: 1024px) {
+  .nav-container-social {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+
+
+  .nav-container-social {
+    position: absolute;
+    bottom: 40px;
+  }
+
+
+
+  .nav-social-icon {
+    font-size: 40px;
+  }
+
+  .nav-social-ul {
+    width: 300px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+
+
+  .header {
+    z-index: 999;
+    height: 80px;
+    background-color: $blanco;
+    position: sticky;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 16px;
+    text-transform: uppercase;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: $blanco;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 999;
+
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: $naranja-claro;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.waves {
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+
+}
+
+/* Animation */
+
+.parallax>use {
+  animation: move-forever 30s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -3s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -4s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -5s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -6s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* /*Shrinking for mobile*/
+/* @media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+}  */
