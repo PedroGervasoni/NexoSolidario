@@ -1,3 +1,52 @@
-.title{
-    height: 600px;
+.inicio{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+
+.title-inicio{
+    font-weight: 600;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.parrafo-inicio{
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.titulo-info-inicio{
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.subtitulo-info-inicio{
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.parrafo-info-inicio{
+    font-size:22px;
+    font-weight: 600;
+}
+/* .img-mapa{
+   height: 70%;
+} */
+.cuadrado{
+    width: 100%;
+    height: 12px;
+    background: rgb(194,61,53);
+    background: linear-gradient(106deg, rgba(194,61,53,1) 0%, rgba(200,93,56,1) 50%, rgba(229,179,35,1) 100%);
+}
+
+.container-mapa-inicio{
+    height: 70% ;
+    display: flex;
+}
+
+
+
+
+
+.container-texto-2{
+    display: flex;
 }

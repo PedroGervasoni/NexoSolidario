@@ -10,13 +10,33 @@
   margin: 0;
   padding: 0;
 }
+
 body,
-html{
-  
+html {
+
   scroll-behavior: smooth;
   background-attachment: fixed, scroll;
+  background-size: cover;
 
+  z-index: -2;
+  position: relative;
 }
+
+
+.linea-gruesa {
+  background-color: $naranja-medio;
+  width: 100%;
+  height: 31px;
+  margin-bottom: 8px;
+  
+}
+
+.linea-fina {
+  background-color: $naranja-claro;
+  width: 100%;
+  height: 16px;
+}
+
 .secciones {
   display: flex;
   width: 100%;
@@ -28,6 +48,7 @@ html{
 
 #inicio {
   height: 100vh;
+
 }
 
 #como-ayudar {
@@ -60,10 +81,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* navbar */
 
+i {
+  color: $negro;
+}
 
 .header {
   background-color: $blanco;
-
+  position: sticky;
   height: 100px;
   display: flex;
   align-items: center;
@@ -246,42 +270,95 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-/* footer */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.header2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .waves {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 15vh;
   margin-bottom: -7px;
   /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
+}
 
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
 }
 
 /* Animation */
 
 .parallax>use {
-  animation: move-forever 30s cubic-bezier(.55, .5, .45, .5) infinite;
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
 
 .parallax>use:nth-child(1) {
-  animation-delay: -3s;
+  animation-delay: -2s;
   animation-duration: 7s;
 }
 
 .parallax>use:nth-child(2) {
-  animation-delay: -4s;
+  animation-delay: -3s;
   animation-duration: 10s;
 }
 
 .parallax>use:nth-child(3) {
-  animation-delay: -5s;
+  animation-delay: -4s;
   animation-duration: 13s;
 }
 
 .parallax>use:nth-child(4) {
-  animation-delay: -6s;
+  animation-delay: -5s;
   animation-duration: 20s;
 }
 
@@ -295,13 +372,18 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-/* /*Shrinking for mobile*/
-/* @media (max-width: 768px) {
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
   .waves {
-    height:40px;
-    min-height:40px;
+    height: 40px;
+    min-height: 40px;
   }
+
   .content {
-    height:30vh;
+    height: 30vh;
   }
-}  */
+
+  h1 {
+    font-size: 24px;
+  }
+}
