@@ -7,31 +7,25 @@
 
 .title-inicio {
   font-weight: 600;
-  font-size: 70px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
 .parrafo-inicio {
-  font-size: 48px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 180px;
 }
 
-.titulo-info-inicio {
-  font-weight: 400;
-  font-size: 70px;
-  text-transform: uppercase;
+.img-mapa {
+  height: 400px;
 }
 
-.subtitulo-info-inicio {
-  font-weight: 500;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-.parrafo-info-inicio {
-  font-size: 22px;
-  font-weight: 600;
+.container-mapa {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 /* .img-mapa{
@@ -53,6 +47,29 @@
   display: flex;
 }
 
+.container-card-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.card {
+  padding: 20px;
+  background: rgba(190, 190, 190, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid #707070;
+}
+
+.card-sin-borde {
+  padding: 20px;
+}
+
+.card-1 {
+  text-align: left;
+}
+
 * {
   font-family: "M PLUS 1p", sans-serif;
   text-decoration: none !important;
@@ -69,6 +86,34 @@ html {
   position: relative;
 }
 
+/* estilo texto general */
+.titulos {
+  font-weight: 400;
+  font-size: 33px;
+  text-transform: uppercase;
+}
+
+.subtitulos {
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.parrafos {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* fin estilo texto */
+.container-lineas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 70px;
+}
+
 .linea-gruesa {
   background-color: #CA653A;
   width: 100%;
@@ -83,6 +128,7 @@ html {
 }
 
 .secciones {
+  position: relative;
   display: flex;
   width: 100%;
   height: 100vh;

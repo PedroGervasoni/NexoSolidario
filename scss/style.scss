@@ -22,7 +22,34 @@ html {
   position: relative;
 }
 
+/* estilo texto general */
+.titulos{
+  font-weight: 400;
+  font-size: 33px;
+  text-transform: uppercase;
+}
+.subtitulos{
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.parrafos{
+  font-size:22px;
+  font-weight: 600;
+}
 
+
+/* fin estilo texto */
+
+
+.container-lineas{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 70px;
+}
 .linea-gruesa {
   background-color: $naranja-medio;
   width: 100%;
@@ -38,6 +65,7 @@ html {
 }
 
 .secciones {
+  position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
