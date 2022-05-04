@@ -1,0 +1,51 @@
+.img-como-ayudar{
+    
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: $border-radius;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-como-ayudar{
+    
+    width: 270px;
+    padding: 10px;
+    border: none;
+    border-radius: $border-radius;
+    background-color: #d486407a;
+    color: $negro;
+}::placeholder { color:$negro; }
+
+.container-buttom{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+button {
+   
+    border-radius:$border-radius;
+    padding: 10px 17px;
+    background: linear-gradient(117deg, rgb(254, 145, 80), rgb(254, 100, 70));
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 0.25s ease 0s;
+    letter-spacing: 0.08rem;
+   }
+   
+   button:hover,
+   button:focus {
+    background: linear-gradient(117deg, rgb(248, 137, 73), rgb(248, 82, 49));
+    box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
+   }

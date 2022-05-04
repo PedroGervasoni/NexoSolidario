@@ -1,4 +1,57 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+.img-como-ayudar {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.4em;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-como-ayudar {
+  width: 270px;
+  padding: 10px;
+  border: none;
+  border-radius: 0.4em;
+  background-color: rgba(212, 134, 64, 0.4784313725);
+  color: #0A0A0A;
+}
+
+::placeholder {
+  color: #0A0A0A;
+}
+
+.container-buttom {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 0.4em;
+  padding: 10px 17px;
+  background: linear-gradient(117deg, rgb(254, 145, 80), rgb(254, 100, 70));
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease 0s;
+  letter-spacing: 0.08rem;
+}
+
+button:hover,
+button:focus {
+  background: linear-gradient(117deg, rgb(248, 137, 73), rgb(248, 82, 49));
+  box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
+}
+
 .inicio {
   display: flex !important;
   flex-direction: row !important;
@@ -6,7 +59,7 @@
 }
 
 .title-inicio {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -43,6 +96,11 @@
   display: flex;
 }
 
+.container-img-como-comenzo {
+  display: flex;
+  justify-content: center;
+}
+
 .container-texto-2 {
   display: flex;
 }
@@ -50,7 +108,7 @@
 .container-card-1 {
   display: flex;
   flex-direction: column;
-  padding: 12px;
+  padding: 5px;
 }
 
 .card {
@@ -60,6 +118,9 @@
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
   border: 1px solid #707070;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-sin-borde {
@@ -119,13 +180,14 @@ html {
 
 .subtitulos {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
 .parrafos {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
+  margin: 30px 0;
 }
 
 /* fin estilo texto */
@@ -158,10 +220,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#como-ayudar {
-  height: 100vh;
 }
 
 #contacto {
@@ -294,6 +352,7 @@ i {
   }
 
   .nav-social-ul {
+    margin-bottom: 50px;
     width: 300px;
     display: flex;
     list-style: none;
@@ -374,6 +433,7 @@ p {
   position: relative;
   text-align: center;
   color: white;
+  width: 100%;
 }
 
 .logo {

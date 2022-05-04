@@ -30,12 +30,13 @@ html {
 }
 .subtitulos{
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 .parrafos{
-  font-size:22px;
+  font-size:20px;
   font-weight: 600;
+  margin: 30px 0;
 }
 
 
@@ -75,9 +76,7 @@ html {
 }
 
 
-#como-ayudar {
-  height: 100vh;
-}
+
 
 #contacto {
   height: 100vh;
@@ -220,6 +219,7 @@ i {
   }
 
   .nav-social-ul {
+    margin-bottom: 50px;
     width: 300px;
     display: flex;
     list-style: none;
@@ -318,6 +318,7 @@ p {
   position: relative;
   text-align: center;
   color: white;
+  width: 100%;
 }
 
 .logo {
